@@ -1,0 +1,869 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+#main {
+    width: 100%;
+    height: 100%;
+}
+
+
+#nav {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.7vw 8.5vw;
+
+}
+
+.left img {
+    height: 33px;
+}
+
+
+#nav .right {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.right ul {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.right ul a {
+    text-decoration: none;
+}
+
+.right ul li {
+    list-style-type: none;
+    /* color: black; */
+    font-size: 1.1vw;
+    font-weight: 600;
+    color: rgba(15, 15, 105, 0.788);
+
+}
+
+.right .signup {
+    border-radius: 7px;
+    padding: 8px 17px;
+    font-size: 1.1vw;
+    border: 1px solid rgba(41, 41, 41, 0.733);
+    background-color: transparent;
+    font-weight: 600;
+    color: rgba(15, 15, 105, 0.788);
+    cursor: pointer;
+}
+
+.right select {
+    font-size: 1.1vw;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    color: rgba(15, 15, 105, 0.788);
+    font-weight: 600;
+}
+
+/* small nav  */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    padding-top: 50px;
+    overflow-x: hidden;
+    transition: 0.4s;
+  }
+
+  .sidenav a {
+    padding-left: 38px;
+    font-size: 26px;
+    display: block;
+    text-decoration: none;
+    margin: 18px 0;
+    transition: 0.4s;
+    color: rgba(0, 0, 128, 0.616);
+  }
+  .sidenav li {
+    list-style: none;
+  }
+
+  .sidenav a:hover {
+    color: white;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .open {
+    height: 29px;
+  }
+
+  .openpr {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    padding: 11px 28px;
+    cursor: pointer;
+    display: none;
+  }
+
+  .smalllg{
+    padding-left: 38px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+  }
+
+
+/* ===================Hero section========================= */
+
+
+#hero {
+    width: 100%;
+    display: flex;
+    /* gap: 20px; */
+    padding: 3.7vw 8.5vw;
+    position: relative;
+    margin-top: 80px;
+}
+
+#hero .herotext {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#hero .herotext h3 {
+    color: orangered;
+    font-size: 1.6vw;
+    font-weight: 500;
+    font-family: Roboto;
+}
+
+.herotext .headings h1 {
+    font-size: 5vw;
+    color: rgb(9, 9, 71);
+    /* font-family: 'Tajawal', sans-serif; */
+    font-family: 'Cutive', serif;
+    font-weight: 900;
+    line-height: 1.4;
+}
+
+.herotext p {
+    font-family: 'Roboto', sans-serif;
+    max-width: 50%;
+    line-height: 1.8;
+    color: rgba(15, 15, 105, 0.788)
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    font-family: Roboto;
+}
+
+.buttons .yellowbtn {
+    padding: 16px 26px;
+    background-color: rgb(236, 162, 4);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+
+.playdiv {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.playdiv .playbtn {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    padding: 2px;
+    background-color: rgba(255, 58, 58, 0.849);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: none;
+    text-align: center;
+    line-height: 0;
+    box-shadow: 3px 3px #9595952e;
+    transition: all ease-in .5s;
+    cursor: pointer;
+
+}
+
+.playbtn:active {
+    transform: scale(-.1);
+    transition: all ease .5s;
+
+}
+
+
+#heroimg img {
+    width: 100%;
+    max-width: 50%;
+    position: absolute;
+    left: 45%;
+    top: -10%;
+}
+
+
+/* ===============Services section */
+
+#services {
+    width: 100%;
+    padding: 3.7vw 8.5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin-top: 100px;
+}
+
+#services .head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+}
+
+.head h3 {
+    font-size: 1.1vw;
+    font-family: Roboto;
+    color: rgba(15, 15, 105, 0.788);
+}
+
+.head h1 {
+    font-size: 3vw;
+    color: rgb(9, 9, 71);
+    font-family: 'Cutive', serif;
+    font-weight: 900;
+}
+
+
+.cards {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-family: roboto;
+}
+
+
+
+
+.cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+    max-width: 38%;
+    border-radius: 20px;
+}
+
+.card h3 {
+    color: rgb(9, 9, 71);
+    ;
+    font-size: 1.7vw;
+}
+
+.card p {
+    max-width: 81%;
+    text-align: center;
+    font-size: 1.2vw;
+    color: rgba(9, 9, 71, 0.774);
+    ;
+}
+
+
+
+.cards .active {
+    box-shadow: 6px 6px 6px 6px rgba(211, 211, 211, 0.801);
+    padding: 10px 10px 60px 10px;
+}
+
+
+/* =====================designations */
+
+#designations {
+    width: 100%;
+    padding: 3.7vw 8.5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin-top: 100px;
+}
+
+#designations .head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+
+}
+
+#designations .cardsdesy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    font-family: roboto;
+    width: 100%;
+}
+
+#designations .cardsdesy .carddesy {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    box-shadow: 6px 6px 6px 4px rgba(211, 211, 211, 0.801);
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+
+.carddesy .desyimg {
+    height: 60vh;
+}
+
+.carddesy .desyimg img {
+    width: 100%;
+    height: 100%;
+}
+
+.carddesy .desytext {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgba(9, 9, 71, 0.774);
+    padding: 0px 20px;
+}
+
+.carddesy .desytext2 {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: rgba(9, 9, 71, 0.774);
+    padding: 0px 20px;
+}
+
+.carddesy .desytext2 p {
+    font-size: 1.05vw;
+}
+
+
+
+/* ==================section place */
+
+
+#sectionplace {
+    width: 100%;
+    padding: 3.7vw 8.5vw;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.leftextplace {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.headplace {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+}
+
+.headplace p {
+    color: rgba(9, 9, 71, 0.774);
+    font-size: 1.3vw;
+    font-family: roboto;
+}
+
+.twoheadplace {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.twoheadplace h1 {
+    color: rgb(9, 9, 71);
+    font-size: 3vw;
+    font-family: 'Cutive', serif;
+    font-weight: 900;
+}
+
+.placecard {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: roboto;
+    color: rgb(9, 9, 71);
+}
+
+.placecard img {
+    height: 65px;
+}
+
+.placecard .placecardbody {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.placecard .placecardbody p {
+    max-width: 66%;
+    font-size: 1vw;
+}
+
+.placecard .placecardbody h3 {
+    font-size: 1.2vw;
+}
+
+
+#sectionplace .placeimg {
+    width: 45%;
+}
+
+#sectionplace .placeimg img {
+    max-width: 100%;
+}
+
+/* ==================testimonails */
+
+
+#testimony {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    padding: 3.7vw 8.5vw;
+}
+
+.headtestimony {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.headtestimony h3 {
+    font-size: 1.3vw;
+    font-family: Roboto;
+    color: rgba(15, 15, 105, 0.788);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.headtestimony h1 {
+    font-size: 3vw;
+    color: rgb(9, 9, 71);
+    font-family: 'Cutive', serif;
+    font-weight: 900;
+
+}
+
+
+.testimonials{
+    width: 100%;
+    color: rgba(15, 15, 105, 0.788);
+    font-family: roboto;
+    
+}
+
+.testimonycard{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 6px 6px 6px 4px rgba(211, 211, 211, 0.801);
+    border-radius: 10px;
+
+}
+
+.testimonycard .testtext{
+   padding: 10px 20px;    
+   line-height: 1.4;
+}
+
+.testimonycard .testuser{
+   padding: 10px 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 7px;
+   margin-bottom: 10px;
+    
+}
+.testimonycard .testuser h3{
+  font-size: 1.3vw;
+    
+}
+.testimonycard .testuser p{
+    font-size: 1.1vw;
+}
+
+
+.cursors{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-size: 25px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/* ================ logos */
+
+
+#logos{
+    width: 100%;
+    overflow-x: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    margin-top: 100px;
+    padding: 3.7vw 8.5vw;
+}
+
+
+/* ========subscribe */
+
+#subscribe{
+    width: 100%;
+    padding: 3.7vw 8.5vw;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+
+}
+
+
+.centerdiv{
+    background-color: rgba(128, 128, 128, 0.08);
+    position: relative;
+    border-top-left-radius: 160px;
+}
+
+
+.centerdiv .icon{
+    position: absolute;
+    right: -1%;
+    top: -6%;
+}
+.centerdiv .icon img{
+   height: 60px;
+}
+
+.centerdiv .innersubscribe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    padding: 5vw;
+    gap: 40px;
+    font-family: roboto;
+}
+.centerdiv .innersubscribe h1{
+    color: rgba(15, 15, 105, 0.651);
+    line-height: 1.4;
+    font-size: 2.5vw;
+}
+
+
+.centerdiv .innersubscribe .emailbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 15px;
+}
+.centerdiv .innersubscribe .emailbox input{
+    padding: 1.5vw 2.8vw;
+    background-color: #fff;
+    font-size: 1vw;
+    outline: none;
+    border-radius: 7px;
+    border: none;
+    max-width: 80%;
+    font-weight: 700;
+}
+
+.centerdiv .innersubscribe .emailbox button{
+    padding: 1.5vw 2vw;
+    border-radius: 7px;
+    border: none;
+    font-size: 1vw;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.493);
+    cursor: pointer;
+}
+
+
+/* footer */
+
+#footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: roboto;
+    padding: 4vw 2vw;
+}
+
+.innerfooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+
+.first{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 30%;
+}
+
+.first h2{
+    font-size: 3.4vw;
+    color: rgba(0, 0, 0, 0.63);
+    justify-self: left;
+    
+}
+.first p{
+    font-size: 1.2vw;
+    max-width: 65%;
+}
+#footer p{
+    color: rgb(94, 94, 94);
+
+}
+
+.second{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.second h2{
+    font-size: 1.4vw;
+    margin-bottom: 10px;
+}
+
+.socail{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+
+.socail h2{
+    font-size: 1.6vw;
+    padding: 10px;
+}
+
+.socail .icons{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.socail .icons img{
+    height: 4vw;
+
+}
+
+.playstore{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    #nav{
+        padding-right: 10px ;
+    }
+    #nav .right{
+        display: none;
+    }
+    #nav .openpr{
+        display: block;
+        width: auto;
+    }
+    .buttons .yellowbtn{
+        font-size: 13px;
+        padding: 15px 15px;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .cards .card{
+        max-width: 60%;
+    }
+
+    #designations .cardsdesy{
+        flex-direction: column;
+    }
+
+    #sectionplace{
+        flex-direction:column-reverse;
+        justify-content: start;
+        align-items: start;
+    }
+
+    #sectionplace .placeimg img {
+        max-width: 214%;
+    }
+    #testimony {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 80px;
+        padding: 3.7vw 8.5vw;
+        gap: 20px;
+        text-align: center;
+    }
+    .cursors{
+        flex-direction: row;
+        margin-left: 0px;
+    }
+    .centerdiv .innersubscribe h1{
+        font-size: small;
+        padding: 20px;
+    }
+    .centerdiv .innersubscribe {
+        padding: 30px;
+    }
+    .centerdiv .innersubscribe .emailbox input{
+        font-size: 12px;
+    }
+    .centerdiv .innersubscribe .emailbox button{
+        font-size: 12px;
+    }
+
+    #footer{
+        flex-direction: column;
+    }
+    .innerfooter{
+        flex-direction: column;
+        text-align: center;
+    }
+    .first{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .first p{
+        max-width: none;
+    }
+    .icons{
+        justify-content: center;
+        font-size: 20px;
+    }
+    .socail .icons img{
+        height: 50px;
+    }
+    .centerdiv .icon img{
+        height: 40px;
+    }
+    #hero .herotext h3{
+        font-size: 2.1vw;
+    }
+    .herotext p {
+        max-width: fit-content;
+        font-size: 2.6vw;
+    }
+    .carddesy .desytext2 p{
+        font-size: 14px;
+    }
+    .placecard .placecardbody h3, p {
+        font-size: 13px;
+    }
+    .headplace p{
+        font-size: 11px;
+    }
+    .twoheadplace h1{
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .headtestimony h1{
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    .headtestimony h3{
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    .head h1{
+        font-size: 18px;
+    }
+    .head h3{
+        font-size: 11px;
+    }
+    .card h3{
+        font-size: 13px;
+    }
+    .card p{
+        font-size: 11px;
+    }
+    .cards {
+        gap: 50px;
+    }
+   
+}
+
